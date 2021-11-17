@@ -4,8 +4,8 @@ Webapps Assignment-11
 
 [Hosted At](https://db06manyam.herokuapp.com/)
 
-Class Gas
+Class animal
 
-gas_type(string)
+animal_type(string)
 quantity(number)
 cost(number)
