@@ -1,0 +1,38 @@
+extends layout
+
+block content
+ h1= title
+
+  if(toShow == null)
+    h2 No instance to detail
+  else
+    - let animalid = toShow._id
+    - let animal_count  = toShow.count 
+    - let animallocation = toShow.location
+    - let animalname = toShow.name 
+    - let actionid = "/resource/animal/" + animalid
+    script let actionid = "#{actionid}"
+    div
+    div.row
+    div(class='animalAttr mr-3') animal ID is: 
+      span(style="color:red") #{animalid}
+    div.row
+    div(class='animalAttr mr-3') animal Count is: 
+      span(style="color:red") #{animal_count}
+    div.row
+    div(class='animalAttr mr-3') animal Location is: 
+      span(style="color:red") #{animallocation}
+    div.row
+    div(class='animalAttr mr-3') animal Name is:
+      span(style="color:red") #{animalname}
+    button(class="btn btn-primary m-2" onclick="detailOnid()") Goback
+    button(class="btn btn-danger m-2" onclick="cancel()") Cancel
+
+  script.
+    function cancel() {
+    // Go back to the home page for the animal collection
+    window.location.href='/animal'
+    }
+    function detailOnid() {
+    window.location.href='/animal'
+    }
