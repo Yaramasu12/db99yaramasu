@@ -7,5 +7,5 @@ Webapps Assignment-11
 Class animal
 
 animal_type(string)
-quantity(number)
-cost(number)
+count(number)
+location(number)
