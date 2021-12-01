@@ -1,11 +1,11 @@
-# db06manyam
+# db99yaramasu
 
 Webapps Assignment-11
 
-[Hosted At](https://db06manyam.herokuapp.com/)
+[Hosted At](https://db99yaramasu.herokuapp.com/)
 
-Class Gas
+Class animal
 
-gas_type(string)
-quantity(number)
-cost(number)
+animal_type(string)
+count(number)
+location(number)
